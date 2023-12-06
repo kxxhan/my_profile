@@ -1,27 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import BoilerPlate from "./components/BoilerPlate";
+import { lazy } from "react";
+import { Routes, Route } from "react-router-dom";
+// import Links from "components/Links";
+// import Main from "pages/Main";
+import Layout from "layout";
+
+const Main = lazy(() => import("pages/Main"));
+const Info = lazy(() => import("pages/Info"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React hahaha
-        </a>
-      </header>
-      <BoilerPlate />
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/info" element={<Info />}></Route>
+      </Route>
+    </Routes>
+
+    // <div className="App">
+    //   <Links />
+    // </div>
   );
 }
 

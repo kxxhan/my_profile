@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 450px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .profile_img {
+    width: 200;
+    height: 200px;
+    border-radius: 100px;
+    margin: 30px;
+  }
+}

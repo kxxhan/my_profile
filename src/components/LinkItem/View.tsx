@@ -1,11 +1,26 @@
+import "./index.scss";
 interface ViewProps {
   url: string;
   icon: string;
   name: string;
+  isHovered: boolean;
+  handleMousewEnter: () => void;
+  handleMouseLeave: () => void;
 }
-function View({ url, icon, name }: ViewProps): React.ReactElement {
+function View({
+  url,
+  icon,
+  name,
+  isHovered,
+  handleMousewEnter,
+  handleMouseLeave,
+}: ViewProps): React.ReactElement {
   return (
-    <div className="url-item">
+    <div
+      className={`linkItem ${isHovered ? "secondary" : "primary"}`}
+      onMouseEnter={handleMousewEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <a href={url}>
         <img src={icon} alt="Youtube Icon" />
         {name}

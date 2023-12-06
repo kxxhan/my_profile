@@ -1,9 +1,8 @@
 import Links from "components/Links";
-
+import "./index.scss";
 function View() {
-  const link = "https://youtube.com";
   return (
-    <div>
+    <div className="App">
       Let's Apply CSS!!
       <Links />
     </div>

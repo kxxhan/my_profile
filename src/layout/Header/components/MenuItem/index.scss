@@ -1,3 +1,23 @@
+$non-hovered: #1c1c1c;
+$hovered: #e50505;
+
 .menu-item {
-  margin: 20px;
+  margin: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+  // margin-right: ;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 20px;
+  // height: 20px;
+
+  &.hovered {
+    color: $hovered;
+  }
+  &.nonhovered {
+    color: $non-hovered;
+  }
 }

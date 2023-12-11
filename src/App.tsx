@@ -4,9 +4,11 @@ import { Routes, Route } from "react-router-dom";
 // import Links from "components/Links";
 // import Main from "pages/Main";
 import Layout from "layout";
+import Main from "pages/Main";
+import Info from "pages/Info";
 
-const Main = lazy(() => import("pages/Main"));
-const Info = lazy(() => import("pages/Info"));
+// const Main = lazy(() => import("pages/Main"));
+// const Info = lazy(() => import("pages/Info"));
 
 function App() {
   return (

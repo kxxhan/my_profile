@@ -1,10 +1,20 @@
 import View from "./View";
 
-// interface NavItems {
-//   name: string;
-// }
+interface NavItem {
+  name: string;
+  path: string;
+}
 function Container(): React.ReactElement {
-  const items: string[] = ["INFO", "PROJECTS"];
+  const items: NavItem[] = [
+    {
+      name: "INFO",
+      path: "info",
+    },
+    {
+      name: "PROJECTS",
+      path: "projects",
+    },
+  ];
   return <View items={items} />;
 }
 export default Container;

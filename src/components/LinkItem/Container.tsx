@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import View from "./View";
 
 interface ContainerProps {
@@ -9,6 +9,20 @@ interface ContainerProps {
 
 function Container({ url, icon, name }: ContainerProps): React.ReactElement {
   const [isHovered, setHovered] = useState(false);
+  const innerWidth = window.innerWidth;
+  const [containerWidth, setContainerWidth] = useState(innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setContainerWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleMouseEnter = (): void => {
     setHovered(true);
@@ -23,6 +37,7 @@ function Container({ url, icon, name }: ContainerProps): React.ReactElement {
       url={url}
       icon={icon}
       name={name}
+      containerWidth={containerWidth}
       isHovered={isHovered}
       handleMousewEnter={handleMouseEnter}
       handleMouseLeave={handleMouseLeave}

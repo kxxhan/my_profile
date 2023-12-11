@@ -1,4 +1,5 @@
 import View from "./View";
+import { useState } from "react";
 
 interface Link {
   url: string;
@@ -6,6 +7,17 @@ interface Link {
   name: string;
 }
 function Container() {
+  const [isHovered, setHovered] = useState(false);
+
+  const handleMouseEnter = (): void => {
+    console.log("Hovered!!!");
+    setHovered(true);
+  };
+
+  const handleMouseLeave = (): void => {
+    setHovered(false);
+  };
+
   const items: Link[] = [
     {
       url: "https://github.com/kxxhan",
@@ -33,6 +45,13 @@ function Container() {
       name: "Instagram",
     },
   ];
-  return <View items={items} />;
+  return (
+    <View
+      items={items}
+      isHovered={isHovered}
+      handleMouseEnter={handleMouseEnter}
+      handleMouseLeave={handleMouseLeave}
+    />
+  );
 }
 export default Container;

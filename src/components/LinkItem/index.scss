@@ -1,16 +1,17 @@
 $primaryColor: #1c1c1c;
 $secondaryColor: #e50505;
 
-.linkItem {
+.link-item {
   display: flex;
   //   background-color: $isHovered ? $primaryColor : $secondaryColor;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   height: 48px;
   border-radius: 24px;
   transition: all 0.2s;
   margin: 10px;
+  transition: width;
 
   &.primary {
     background-color: $primaryColor;

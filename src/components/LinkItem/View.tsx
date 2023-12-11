@@ -3,6 +3,7 @@ interface ViewProps {
   url: string;
   icon: string;
   name: string;
+  containerWidth: number;
   isHovered: boolean;
   handleMousewEnter: () => void;
   handleMouseLeave: () => void;
@@ -11,13 +12,15 @@ function View({
   url,
   icon,
   name,
+  containerWidth,
   isHovered,
   handleMousewEnter,
   handleMouseLeave,
 }: ViewProps): React.ReactElement {
   return (
     <div
-      className={`linkItem ${isHovered ? "secondary" : "primary"}`}
+      className={`link-item ${isHovered ? "secondary" : "primary"}`}
+      style={{ width: `${containerWidth - 50}px` }}
       onMouseEnter={handleMousewEnter}
       onMouseLeave={handleMouseLeave}
     >

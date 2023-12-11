@@ -1,7 +1,21 @@
+$logo_size: 35px;
+
 .menu-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  // margin-top: 10px;
-  // pa-right: 20px;
+  margin-top: 5px;
+  align-items: start;
+  width: 100%;
+  .logo {
+    width: $logo_size;
+    height: $logo_size;
+    margin: 5px;
+  }
+  .menu-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: $logo_size;
+  }
 }

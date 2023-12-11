@@ -1,23 +1,45 @@
-import NavItem from "../MenuItem";
+import MenuItem from "../MenuItem";
 import "./index.scss";
 
-interface NavItem {
+interface MenuItem {
   name: string;
   path: string;
 }
 interface ViewProps {
   // items: Array<string>;
-  items: NavItem[];
+  isExpand: boolean;
+  items: MenuItem[];
+  containerWidth: number;
+  onClickChevron: () => void;
 }
-function View({ items }: ViewProps): React.ReactElement {
+function View({
+  isExpand,
+  items,
+  containerWidth,
+  onClickChevron,
+}: ViewProps): React.ReactElement {
+  console.log(123123, isExpand);
   return (
     <div className="menu-container">
-      <img className="logo" src="logo2.png" alt=""></img>
-      <div className="menu-sub-container">
-        {items.map((item, index) => (
-          <NavItem key={index} name={item.name} path={item.path} />
-        ))}
-      </div>
+      <img className="logo" src="logo.png" alt=""></img>
+      {containerWidth > 680 && (
+        <div className="menu-sub-container">
+          {items.map((item, index) => (
+            <MenuItem key={index} name={item.name} path={item.path} />
+          ))}
+        </div>
+      )}
+      {containerWidth <= 680 && (
+        <>
+          <img
+            className="expand-btn"
+            src={isExpand ? "icons/up.svg" : "icons/down.svg"}
+            alt=""
+            onClick={onClickChevron}
+          />
+          <div className="logo"></div>
+        </>
+      )}
     </div>
   );
 }

@@ -4,12 +4,25 @@ $logo_size: 35px;
   display: flex;
   justify-content: center;
   margin-top: 5px;
-  align-items: start;
+  // align-items: start;
   width: 100%;
   .logo {
     width: $logo_size;
     height: $logo_size;
     margin: 5px;
+    margin-right: auto;
+  }
+  .expand-btn {
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  .collapse-btn {
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
   }
   .menu-sub-container {
     display: flex;
@@ -18,4 +31,12 @@ $logo_size: 35px;
     width: 100%;
     margin-right: $logo_size;
   }
+  // @media screen and (max-width: 680px) {
+  // .logo {
+  //   margin-right: 0;
+  // }
+  // .expand-btn {
+  //   // margin-right: auto + $logo_size;
+  // }
+  // }
 }

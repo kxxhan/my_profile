@@ -10,7 +10,6 @@ function Container() {
   const [isHovered, setHovered] = useState(false);
 
   const handleMouseEnter = (): void => {
-    console.log("Hovered!!!");
     setHovered(true);
   };
 

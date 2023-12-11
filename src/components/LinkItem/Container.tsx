@@ -9,8 +9,7 @@ interface ContainerProps {
 
 function Container({ url, icon, name }: ContainerProps): React.ReactElement {
   const [isHovered, setHovered] = useState(false);
-  const innerWidth = window.innerWidth;
-  const [containerWidth, setContainerWidth] = useState(innerWidth);
+  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

@@ -1,11 +1,32 @@
+import React, { useState, useEffect } from "react";
 import View from "./View";
 
-interface NavItem {
+interface ContainerProps {
+  isExpand: boolean;
+  onClickChevron: () => void;
+}
+interface MenuItem {
   name: string;
   path: string;
 }
-function Container(): React.ReactElement {
-  const items: NavItem[] = [
+function Container({
+  isExpand,
+  onClickChevron,
+}: ContainerProps): React.ReactElement {
+  const [containerWidth, setContainerWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setContainerWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const items: MenuItem[] = [
     {
       name: "INFO",
       path: "info",
@@ -15,6 +36,13 @@ function Container(): React.ReactElement {
       path: "projects",
     },
   ];
-  return <View items={items} />;
+  return (
+    <View
+      isExpand={isExpand}
+      items={items}
+      containerWidth={containerWidth}
+      onClickChevron={onClickChevron}
+    />
+  );
 }
 export default Container;

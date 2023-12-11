@@ -18,7 +18,6 @@ function View({
   containerWidth,
   onClickChevron,
 }: ViewProps): React.ReactElement {
-  console.log(123123, isExpand);
   return (
     <div className="menu-container">
       <img className="logo" src="logo.png" alt=""></img>

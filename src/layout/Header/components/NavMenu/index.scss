@@ -9,7 +9,8 @@ $logo_size: 35px;
   .logo {
     width: $logo_size;
     height: $logo_size;
-    margin: 5px;
+    margin-top: 15px;
+    margin-left: 35px;
     margin-right: auto;
   }
   .expand-btn {
@@ -29,7 +30,7 @@ $logo_size: 35px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-right: $logo_size;
+    margin-right: $logo_size + 35px;
   }
   // @media screen and (max-width: 680px) {
   // .logo {

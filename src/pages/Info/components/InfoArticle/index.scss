@@ -1,0 +1,21 @@
+.article-container {
+  header {
+    font-size: 45px;
+  }
+  p {
+    font-size: 18px;
+  }
+  // display: flex;
+  .profile-color {
+    max-width: 230px;
+  }
+  .article-container-inside {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .p-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -20,7 +20,9 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="menu-container">
-      <img className="logo" src="logo.png" alt=""></img>
+      <a href="http://localhost:3000/">
+        <img className="logo" src="logo.png" alt="Logo"></img>
+      </a>
       {containerWidth > 680 && (
         <div className="menu-sub-container">
           {items.map((item, index) => (

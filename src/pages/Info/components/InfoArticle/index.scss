@@ -1,13 +1,25 @@
+$font-size: 20px;
+
 .article-container {
+  width: 70%;
+
   header {
-    font-size: 45px;
+    // font-size: 45px;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 3%;
   }
   p {
-    font-size: 18px;
+    font-size: $font-size;
+    line-height: 1.5;
   }
-  // display: flex;
   .profile-color {
-    max-width: 230px;
+    margin-top: $font-size;
+    margin-left: 30px;
+    height: auto;
+    max-width: 40%;
   }
   .article-container-inside {
     margin-left: 40px;
@@ -16,6 +28,8 @@
     .p-container {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: start;
     }
   }
 }

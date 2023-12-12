@@ -20,6 +20,7 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="menu-container">
+      {/* [TEMP]: href is required to rerplace after publishing */}
       <a href="http://localhost:3000/">
         <img className="logo" src="logo.png" alt="Logo"></img>
       </a>

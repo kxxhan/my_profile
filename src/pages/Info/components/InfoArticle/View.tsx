@@ -5,8 +5,8 @@ function View() {
     <div className="article-container">
       <div className="article-container-inside">
         <header>
-          ABOUT JHIN <br />
-          HAN
+          About Jhin <br />
+          Han
         </header>
         <div className="p-container">
           <p>
@@ -28,7 +28,6 @@ function View() {
             alt="JHIN"
           />
         </div>
-
         <p>
           Nam sed consectetur velit, consectetur laoreet lacus. Nam cursus
           eleifend tortor non gravida. Donec accumsan felis ante, a tincidunt

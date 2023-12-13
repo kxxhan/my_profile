@@ -1,5 +1,9 @@
 .header-container {
-  display: flex;
-  flex-direction: column;
-  // background-color: #f3ede5;
+  position: fixed;
+  width: 100%;
+  .header-container-inside {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
 }

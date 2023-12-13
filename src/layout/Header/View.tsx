@@ -21,14 +21,16 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="header-container">
-      {isExpand && containerWidth <= 680 && (
-        <div className="menu-container">
-          {items.map((item, index) => (
-            <MenuItem key={index} name={item.name} path={item.path} />
-          ))}
-        </div>
-      )}
-      <NavMenu isExpand={isExpand} onClickChevron={onClickChevron} />
+      <div className="header-container-inside">
+        {isExpand && containerWidth <= 680 && (
+          <div className="menu-container">
+            {items.map((item, index) => (
+              <MenuItem key={index} name={item.name} path={item.path} />
+            ))}
+          </div>
+        )}
+        <NavMenu isExpand={isExpand} onClickChevron={onClickChevron} />
+      </div>
     </div>
   );
 }

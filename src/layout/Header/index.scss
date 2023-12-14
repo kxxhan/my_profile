@@ -1,9 +1,12 @@
 .header-container {
   position: fixed;
   width: 100%;
+  backdrop-filter: saturate(0) blur(10px);
+  transition: backdrop-filter 0.5s ease;
   .header-container-inside {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 70px;
+    // background-color: tomato;
   }
 }

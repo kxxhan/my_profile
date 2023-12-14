@@ -1,27 +1,19 @@
 import React from "react";
-import { lazy } from "react";
-import { Routes, Route } from "react-router-dom";
-// import Links from "components/Links";
-// import Main from "pages/Main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "layout";
 import Main from "pages/Main";
 import Info from "pages/Info";
 
-// const Main = lazy(() => import("pages/Main"));
-// const Info = lazy(() => import("pages/Info"));
-
 function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/info" element={<Info />}></Route>
-      </Route>
-    </Routes>
-
-    // <div className="App">
-    //   <Links />
-    // </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Main />} />
+          <Route path="/info" element={<Info />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -25,7 +25,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://kxxhan.github.io/my_profile",
+  "homepage": "https://kxxhan.github.io/my_profile/",
   "eslintConfig": {
     "extends": [
       "react-app",

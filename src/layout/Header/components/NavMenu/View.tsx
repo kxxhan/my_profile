@@ -1,3 +1,4 @@
+import path from "path";
 import MenuItem from "../MenuItem";
 import "./index.scss";
 
@@ -6,14 +7,15 @@ interface MenuItem {
   path: string;
 }
 interface ViewProps {
-  // items: Array<string>;
   isExpand: boolean;
+  path: string;
   items: MenuItem[];
   containerWidth: number;
   onClickChevron: () => void;
 }
 function View({
   isExpand,
+  path,
   items,
   containerWidth,
   onClickChevron,
@@ -21,7 +23,7 @@ function View({
   return (
     <div className="menu-container">
       {/* [TEMP]: href is required to rerplace after publishing */}
-      <a href="http://localhost:3000/">
+      <a href={path + "my_profile/"}>
         <img className="logo" src="logo.png" alt="Logo"></img>
       </a>
       {containerWidth > 680 && (

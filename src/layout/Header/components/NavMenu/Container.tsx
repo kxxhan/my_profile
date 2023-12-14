@@ -14,6 +14,11 @@ function Container({
   onClickChevron,
 }: ContainerProps): React.ReactElement {
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);
+  const isDevlopment: boolean = process.env.NODE_ENV === "development";
+  const path: string = isDevlopment
+    ? "http://localhost:3000/"
+    : "https://kxxhan/github.io/my_profile/";
+
   useEffect(() => {
     const handleResize = () => {
       setContainerWidth(window.innerWidth);
@@ -39,6 +44,7 @@ function Container({
   return (
     <View
       isExpand={isExpand}
+      path={path}
       items={items}
       containerWidth={containerWidth}
       onClickChevron={onClickChevron}

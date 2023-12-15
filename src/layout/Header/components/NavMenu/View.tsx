@@ -22,7 +22,7 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="menu-container">
-      <a href={path + "my_profile/"}>
+      <a href={path}>
         <img className="logo" src="logo.png" alt="Logo"></img>
       </a>
       {containerWidth > 680 && (

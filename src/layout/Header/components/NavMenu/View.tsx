@@ -22,8 +22,7 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="menu-container">
-      {/* [TEMP]: href is required to rerplace after publishing */}
-      <a href="https://naver.com">
+      <a href={path + "my_profile/"}>
         <img className="logo" src="logo.png" alt="Logo"></img>
       </a>
       {containerWidth > 680 && (

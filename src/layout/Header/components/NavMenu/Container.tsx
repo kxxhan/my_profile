@@ -17,7 +17,7 @@ function Container({
   const isDevlopment: boolean = process.env.NODE_ENV === "development";
   const path: string = isDevlopment
     ? "http://localhost:3000/my_profile/"
-    : "https://kxxhan/github.io/my_profile/";
+    : "https://kxxhan.github.io/my_profile/";
 
   useEffect(() => {
     const handleResize = () => {

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://kxxhan.github.io/my_profile/static/css/main.df088482.css",
-    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.8bb91b7c.js",
+    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.155d97c7.js",
     "static/js/787.c67d187e.chunk.js": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js",
     "index.html": "https://kxxhan.github.io/my_profile/index.html",
     "main.df088482.css.map": "https://kxxhan.github.io/my_profile/static/css/main.df088482.css.map",
-    "main.8bb91b7c.js.map": "https://kxxhan.github.io/my_profile/static/js/main.8bb91b7c.js.map",
+    "main.155d97c7.js.map": "https://kxxhan.github.io/my_profile/static/js/main.155d97c7.js.map",
     "787.c67d187e.chunk.js.map": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df088482.css",
-    "static/js/main.8bb91b7c.js"
+    "static/js/main.155d97c7.js"
   ]
 }

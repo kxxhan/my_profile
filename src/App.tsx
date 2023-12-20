@@ -11,6 +11,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="/info" element={<Info />} />
+          {/* TEMP */}
+          <Route path="/projects" element={<Main />} />
         </Route>
       </Routes>
     </BrowserRouter>

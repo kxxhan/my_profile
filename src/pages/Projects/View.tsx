@@ -1,4 +1,4 @@
 function View() {
-  return <div>HIHIHIHI</div>;
+  return <div>NEOVIM SETUP DONE</div>;
 }
 export default View;

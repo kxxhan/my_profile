@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "layout";
 import Main from "pages/Main";
 import Info from "pages/Info";
+import Project from "pages/Projects";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route index element={<Main />} />
           <Route path="/info" element={<Info />} />
           {/* TEMP */}
-          <Route path="/projects" element={<Main />} />
+          <Route path="/projects" element={<Project />} />
         </Route>
       </Routes>
     </BrowserRouter>

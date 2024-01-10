@@ -1,4 +1,14 @@
-function View() {
+interface projectItem {
+  date: string;
+  title: string;
+  description: string;
+  // TEMP
+  techs: string[];
+}
+interface ViewProps {
+  projectList: projectItem[];
+}
+function View({ projectList }: ViewProps) {
   return (
     <div className="container">
       <div>

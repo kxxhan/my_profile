@@ -1,3 +1,5 @@
+import ProjectItem from "./components/ProjectItem";
+
 interface projectItem {
   date: string;
   title: string;
@@ -12,7 +14,9 @@ function View({ projectList }: ViewProps) {
   return (
     <div className="container">
       <div>
-        <h1>Projects</h1>
+        {projectList.map((project, index) => {
+          <ProjectItem />;
+        })}
       </div>
     </div>
   );

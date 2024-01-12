@@ -14,9 +14,13 @@ function View({ projectList }: ViewProps) {
   return (
     <div className="container">
       <div>
-        {projectList.map((project, index) => {
-          <ProjectItem />;
-        })}
+        {projectList.map((project, index) => (
+          <ProjectItem
+            date={project.date}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
     </div>
   );

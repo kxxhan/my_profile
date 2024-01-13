@@ -1,14 +1,12 @@
 import View from "./View";
 
-interface projectItem {
+interface ContainerProps {
   date: string;
   title: string;
   description: string;
-  // TEMP
-  techs: string[];
 }
 
-function Container() {
-  return <View />;
+function Container({ date, title, description }: ContainerProps) {
+  return <View date={date} title={title} description={description} />;
 }
 export default Container;

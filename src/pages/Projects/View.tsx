@@ -1,10 +1,11 @@
 import ProjectItem from "./components/ProjectItem";
+import "./index.scss";
 
 interface projectItem {
   date: string;
+  thumbnail: string;
   title: string;
   description: string;
-  // TEMP
   techs: string[];
 }
 interface ViewProps {
@@ -12,15 +13,20 @@ interface ViewProps {
 }
 function View({ projectList }: ViewProps) {
   return (
-    <div className="container">
-      <div>
-        {projectList.map((project, index) => (
-          <ProjectItem
-            date={project.date}
-            title={project.title}
-            description={project.description}
-          />
-        ))}
+    <div className="projects-container">
+      <h1>Projects</h1>
+      <div className="pl-container">
+        <ul>
+          {projectList.map((project, index) => (
+            <ProjectItem
+              date={project.date}
+              thumbnail={project.thumbnail}
+              title={project.title}
+              description={project.description}
+              techs={project.techs}
+            />
+          ))}
+        </ul>
       </div>
     </div>
   );

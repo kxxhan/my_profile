@@ -1,0 +1,41 @@
+li {
+  list-style-type: none;
+  max-width: 250px;
+  min-width: 200px;
+
+  h3 {
+    font-family: sans-serif;
+    margin-bottom: 4px;
+  }
+  h5 {
+    color: #aaa;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    line-height: 0;
+    font-size: 0px;
+
+    img {
+      overflow-clip-margin: content-box;
+      overflow: clip;
+      border-radius: 12px;
+    }
+  }
+
+  .pjt-description {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: serif;
+    margin-top: 0px;
+  }
+}

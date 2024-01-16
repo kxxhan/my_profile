@@ -4,6 +4,7 @@ import "./index.scss";
 interface projectItem {
   date: string;
   thumbnail: string;
+  href: string;
   title: string;
   description: string;
   techs: string[];
@@ -21,6 +22,7 @@ function View({ projectList }: ViewProps) {
             <ProjectItem
               date={project.date}
               thumbnail={project.thumbnail}
+              href={project.href}
               title={project.title}
               description={project.description}
               techs={project.techs}

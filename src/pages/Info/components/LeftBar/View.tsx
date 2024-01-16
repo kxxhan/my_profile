@@ -13,7 +13,7 @@ function View() {
         <img className="profile-wb" src="pictures/profile_wb.jpg" alt="JHIN" />
         <p>
           I'm Jhin, a front-end developer in Korea.{" "}
-          <a href="/projects">more about me.</a>
+          <a href="/my_profile/projects">more about me.</a>
         </p>
       </div>
     </div>

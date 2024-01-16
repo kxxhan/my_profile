@@ -3,6 +3,7 @@ import View from "./View";
 interface ContainerProps {
   date: string;
   thumbnail: string;
+  href: string;
   title: string;
   description: string;
   techs: string[];
@@ -11,6 +12,7 @@ interface ContainerProps {
 function Container({
   date,
   thumbnail,
+  href,
   title,
   description,
   techs,
@@ -19,6 +21,7 @@ function Container({
     <View
       date={date}
       thumbnail={thumbnail}
+      href={href}
       title={title}
       description={description}
       techs={techs}

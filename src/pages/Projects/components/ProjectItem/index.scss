@@ -32,10 +32,17 @@ li {
   }
 
   .pjt-description {
-    color: #aaa;
+    color: #666666;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 20px;
     font-family: serif;
     margin-top: 0px;
+  }
+
+  .tech-list {
+    gap: 4px !important;
+    padding: 0px;
+    max-width: 250px;
+    flex-wrap: wrap;
   }
 }

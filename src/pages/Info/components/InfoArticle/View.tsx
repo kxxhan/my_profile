@@ -5,7 +5,7 @@ function View() {
     <div className="article-container">
       <div className="article-container-inside">
         <article>
-          <header>About Jhin</header>
+          <header>ABOUT JHIN</header>
           <div className="p-container">
             <p className="about-container">
               <p className="about-paragraph">Hello! My name is Jhin.</p>
@@ -16,9 +16,11 @@ function View() {
                 studying computer engineering as an associated major.
               </p>
               <p className="about-paragraph">
-                I mainly use JavaScript and have a lot of practical project
-                experience using various technology stacks such as React, React
-                Native, and Vue.
+                I primarily use JavaScript and possess extensive hands-on
+                experience with diverse technology stacks, including React,
+                React Native, and Vue. I also work with TypeScript, staying
+                updated with the latest front-end trends to ensure I'm
+                well-versed in the ever-evolving landscape.
               </p>
             </p>
 

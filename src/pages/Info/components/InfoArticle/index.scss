@@ -12,17 +12,26 @@ $leftbar-max-width: 250px;
     font-weight: 400;
     letter-spacing: -1px;
     line-height: 1.1;
-    margin-bottom: 3%;
+    margin-bottom: 10px;
   }
-  .about-paragraph {
-    font-size: $font-size;
-    line-height: 1.5;
+  .about-container {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    .about-paragraph {
+      font-size: $font-size;
+      line-height: 1.5;
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
   }
+
   .profile-color {
     margin-top: $font-size;
     margin-left: 30px;
     height: auto;
-    max-width: 40%;
+    max-width: 300px;
+    min-width: 200px;
   }
   .article-container-inside {
     margin-left: 40px;

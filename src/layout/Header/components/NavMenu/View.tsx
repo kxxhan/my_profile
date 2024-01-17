@@ -40,7 +40,7 @@ function View({
             alt=""
             onClick={onClickChevron}
           />
-          <div className="logo"></div>
+          <div className="dummy"></div>
         </>
       )}
     </div>

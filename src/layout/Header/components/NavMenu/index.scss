@@ -13,6 +13,13 @@ $logo_size: 35px;
     margin-left: 35px;
     margin-right: auto;
   }
+  .dummy {
+    width: $logo_size;
+    height: $logo_size;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 35px;
+  }
   .expand-btn {
     width: 20px;
     margin-left: auto;

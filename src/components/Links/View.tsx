@@ -22,7 +22,7 @@ function View({
 }: ViewProps): React.ReactElement {
   return (
     <div className="link-container">
-      <h2
+      <p
         className={`nickname ${
           isHovered ? "secondary-color" : "primary-color"
         }`}
@@ -30,7 +30,7 @@ function View({
         onMouseLeave={handleMouseLeave}
       >
         @hxxkon
-      </h2>
+      </p>
       <img src="profile.jpeg" alt="" className="profile_img" />
       <div className="links">
         {items.map((item, index) => (

@@ -26,7 +26,12 @@ $secondary-color: #e50505;
     font-weight: 300;
     font-size: 46px;
     line-height: 50px;
-    font-family: sans-serif;
+    font-family:
+      Leon Sans,
+      Pretendard Variable,
+      sans-serif;
+    margin-top: 80px;
+    margin-bottom: 25px;
     &.primary-color {
       color: $primary-color;
     }

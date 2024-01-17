@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://kxxhan.github.io/my_profile/static/css/main.b9dd6d16.css",
-    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.0f8d52b5.js",
+    "main.css": "https://kxxhan.github.io/my_profile/static/css/main.7dc6acf1.css",
+    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.653e50e3.js",
     "static/js/787.c67d187e.chunk.js": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js",
     "index.html": "https://kxxhan.github.io/my_profile/index.html",
-    "main.b9dd6d16.css.map": "https://kxxhan.github.io/my_profile/static/css/main.b9dd6d16.css.map",
-    "main.0f8d52b5.js.map": "https://kxxhan.github.io/my_profile/static/js/main.0f8d52b5.js.map",
+    "main.7dc6acf1.css.map": "https://kxxhan.github.io/my_profile/static/css/main.7dc6acf1.css.map",
+    "main.653e50e3.js.map": "https://kxxhan.github.io/my_profile/static/js/main.653e50e3.js.map",
     "787.c67d187e.chunk.js.map": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9dd6d16.css",
-    "static/js/main.0f8d52b5.js"
+    "static/css/main.7dc6acf1.css",
+    "static/js/main.653e50e3.js"
   ]
 }

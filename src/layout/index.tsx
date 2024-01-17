@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Body from "./Body";
+import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 import "./index.scss";
 
@@ -13,6 +14,7 @@ function Layout() {
         {/* <Route path="/" element={<Main />}></Route>
         <Route path="/info" element={<Info />}></Route> */}
       </Body>
+      <Footer />
     </div>
   );
 }

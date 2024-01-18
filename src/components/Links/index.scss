@@ -6,6 +6,16 @@ $secondary-color: #e50505;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 550px;
+  min-width: 480px;
+  .link-label {
+    width: 100%;
+    font-size: 26px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    /* text-decoration-color: #525252; */
+    text-decoration-thickness: 4px;
+  }
   .links {
     display: flex;
     flex-direction: column;
@@ -15,14 +25,8 @@ $secondary-color: #e50505;
     margin: 0 auto;
     flex-wrap: wrap;
   }
-  .profile_img {
-    width: 130;
-    height: 130px;
-    border-radius: 100px;
-    margin: 30px;
-  }
 
-  .nickname {
+  /* .nickname {
     font-weight: 300;
     font-size: 46px;
     line-height: 50px;
@@ -38,5 +42,5 @@ $secondary-color: #e50505;
     &.secondary-color {
       color: $secondary-color;
     }
-  }
+  } */
 }

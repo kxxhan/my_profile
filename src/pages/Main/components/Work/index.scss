@@ -1,0 +1,38 @@
+.work-container {
+  width: 100%;
+  .work {
+    width: 100%;
+    font-size: 26px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    /* text-decoration-color: #525252; */
+    text-decoration-thickness: 4px;
+  }
+  .work-phrase {
+    text-align: justify;
+    text-indent: 1em;
+    font-size: 17px;
+
+    line-height: 1.5;
+    letter-spacing: 0.5;
+
+    .ssafy-anchor {
+      color: #3d7aed;
+    }
+  }
+  .more-container {
+    display: flex;
+    justify-content: end;
+    .more-anchor {
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 0.375rem;
+      &.primary {
+        color: #1c1c1c;
+      }
+      &.secondary {
+        color: #aaaaaa;
+      }
+    }
+  }
+}

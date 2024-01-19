@@ -6,15 +6,17 @@ $secondary-color: #e50505;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 550px;
-  min-width: 480px;
+  width: 100%;
   .link-label {
     width: 100%;
-    font-size: 26px;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    /* text-decoration-color: #525252; */
-    text-decoration-thickness: 4px;
+    .contacts {
+      font-size: 26px;
+      font-size: 26px;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      /* text-decoration-color: #525252; */
+      text-decoration-thickness: 4px;
+    }
   }
   .links {
     display: flex;

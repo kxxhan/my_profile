@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://kxxhan.github.io/my_profile/static/css/main.30694514.css",
-    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.f1543f2b.js",
+    "main.css": "https://kxxhan.github.io/my_profile/static/css/main.93b8a95f.css",
+    "main.js": "https://kxxhan.github.io/my_profile/static/js/main.63322515.js",
     "static/js/787.c67d187e.chunk.js": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js",
     "index.html": "https://kxxhan.github.io/my_profile/index.html",
-    "main.30694514.css.map": "https://kxxhan.github.io/my_profile/static/css/main.30694514.css.map",
-    "main.f1543f2b.js.map": "https://kxxhan.github.io/my_profile/static/js/main.f1543f2b.js.map",
+    "main.93b8a95f.css.map": "https://kxxhan.github.io/my_profile/static/css/main.93b8a95f.css.map",
+    "main.63322515.js.map": "https://kxxhan.github.io/my_profile/static/js/main.63322515.js.map",
     "787.c67d187e.chunk.js.map": "https://kxxhan.github.io/my_profile/static/js/787.c67d187e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30694514.css",
-    "static/js/main.f1543f2b.js"
+    "static/css/main.93b8a95f.css",
+    "static/js/main.63322515.js"
   ]
 }

@@ -23,3 +23,9 @@ $PROJECT_ROOT
 │   │ # Page files
 │   └── pages
 ```
+
+# Reference sites
+---
+[Takuya Matsuyama](https://www.craftz.dog/)
+[Jongmin kim's blog](https://blog.cmiscm.com/?page_id=6127)
+[Joelonsoftware][https://www.joelonsoftware.com/]

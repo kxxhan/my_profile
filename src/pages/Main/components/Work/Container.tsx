@@ -7,6 +7,7 @@ function Container() {
   if (currentHost === "localhost:3000") {
     path = "http://localhost:3000/my_profile/info";
   } else {
+    console.log(1111, currentHost);
     path = "https://kxxhan.github.io/my_profile/info";
   }
   const [isHovered, setIsHovered] = useState(false);

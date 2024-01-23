@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./index.scss";
 interface ViewProps {
   path: string;
@@ -29,14 +30,14 @@ function View({
         His focus is on crafting digital services and realizing creative idels.
       </p>
       <div className="more-container">
-        <a
+        <Link
+          to={"/info"}
           className={`more-anchor ${isHovered ? "secondary" : "primary"}`}
-          href={path}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           More about me {">"}
-        </a>
+        </Link>
       </div>
     </div>
   );

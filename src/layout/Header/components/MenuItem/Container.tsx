@@ -11,6 +11,10 @@ function Container({ name, path }: ContainerProps): React.ReactElement {
 
   const navigate = useNavigate();
   const onClick = () => {
+    if (path === "https://github.com/kxxhan/my_profile") {
+      window.location.href = path;
+      return;
+    }
     navigate(path);
   };
 

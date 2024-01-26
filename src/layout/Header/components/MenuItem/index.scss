@@ -3,7 +3,7 @@ $hovered: #e50505;
 
 .menu-item {
   margin: 10px;
-  font-size: 13px;
+  font-size: 16px;
   font-family: Roboto Condensed;
   font-weight: 700;
   letter-spacing: 1px;
@@ -21,5 +21,8 @@ $hovered: #e50505;
   }
   &.nonhovered {
     color: $non-hovered;
+  }
+  svg {
+    margin: 0 3px;
   }
 }

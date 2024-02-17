@@ -1,11 +1,6 @@
 import LinkItem from "components/LinkItem";
 import "./index.scss";
-
-interface Link {
-  url: string;
-  icon: string;
-  name: string;
-}
+import { Link } from "utils/interfaces";
 
 interface ViewProps {
   items: Link[];

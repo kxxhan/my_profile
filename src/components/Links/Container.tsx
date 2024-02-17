@@ -1,11 +1,7 @@
 import View from "./View";
 import { useState } from "react";
+import { Link } from "utils/interfaces";
 
-interface Link {
-  url: string;
-  icon: string;
-  name: string;
-}
 function Container() {
   const [isHovered, setHovered] = useState(false);
 

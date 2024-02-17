@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import View from "./View";
+import { GnbItem } from "utils/interfaces";
 
-interface MenuItem {
-  name: string;
-  path: string;
-}
 function Container() {
   const [isExpand, setIsExpand] = useState(false);
   const [containerWidth, setContainerWidth] = useState(window.innerWidth);
@@ -21,7 +18,7 @@ function Container() {
     };
   }, []);
 
-  const items: MenuItem[] = [
+  const items: GnbItem[] = [
     {
       name: "INFO",
       path: "info",

@@ -3,3 +3,8 @@ export interface Link {
   icon: string;
   name: string;
 }
+
+export interface GnbItem {
+  name: string;
+  path: string;
+}

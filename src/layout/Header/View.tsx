@@ -2,15 +2,12 @@ import React from "react";
 import NavMenu from "./components/NavMenu";
 import MenuItem from "./components/MenuItem";
 import "./index.scss";
+import { GnbItem } from "utils/interfaces";
 
-interface MenuItem {
-  name: string;
-  path: string;
-}
 interface ViewProps {
   isExpand: boolean;
   containerWidth: number;
-  items: MenuItem[];
+  items: GnbItem[];
   onClickChevron: () => void;
 }
 function View({

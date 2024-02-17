@@ -1,15 +1,11 @@
-import path from "path";
 import MenuItem from "../MenuItem";
 import "./index.scss";
+import { GnbItem } from "utils/interfaces";
 
-interface MenuItem {
-  name: string;
-  path: string;
-}
 interface ViewProps {
   isExpand: boolean;
   path: string;
-  items: MenuItem[];
+  items: GnbItem[];
   containerWidth: number;
   onClickChevron: () => void;
 }

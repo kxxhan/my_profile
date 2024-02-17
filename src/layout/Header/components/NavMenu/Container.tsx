@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import View from "./View";
+import { GnbItem } from "utils/interfaces";
 
 interface ContainerProps {
   isExpand: boolean;
   onClickChevron: () => void;
 }
-interface MenuItem {
-  name: string;
-  path: string;
-}
+// interface MenuItem {
+//   name: string;
+//   path: string;
+// }
 function Container({
   isExpand,
   onClickChevron,
@@ -31,7 +32,7 @@ function Container({
     };
   }, []);
 
-  const items: MenuItem[] = [
+  const items: GnbItem[] = [
     {
       name: "INFO",
       path: "info",

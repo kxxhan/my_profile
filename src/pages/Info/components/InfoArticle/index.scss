@@ -2,10 +2,13 @@ $font-size: 20px;
 $leftbar-max-width: 250px;
 
 .article-container {
-  margin-left: $leftbar-max-width;
-  margin-right: $leftbar-max-width;
-  max-width: 1000px;
+  // margin-left: $leftbar-max-width;
+  // margin-right: $leftbar-max-width;
+  // max-width: 1000px;
+  display: flex;
+  justify-content: center;
   height: 100%;
+  width: 100%;
   color: #404040;
 
   header {
@@ -38,6 +41,7 @@ $leftbar-max-width: 250px;
   .article-container-inside {
     margin-left: 40px;
     margin-right: 40px;
+    max-width: 1000px;
 
     .p-container {
       display: flex;

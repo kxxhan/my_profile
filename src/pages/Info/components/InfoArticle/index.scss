@@ -4,9 +4,10 @@ $leftbar-max-width: 400px;
 .article-container {
   // margin-left: $leftbar-max-width;
   // margin-right: $leftbar-max-width;
-  // max-width: 1000px;
-  display: flex;
-  justify-content: center;
+  max-width: 1600px;
+  display: inline-block;
+  // justify-content: center;
+  padding: 2% 5% 5% 25%;
   height: 100%;
   width: 100%;
   color: #404040;

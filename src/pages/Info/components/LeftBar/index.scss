@@ -1,15 +1,18 @@
-$max-width: 400;
+// $max-width: 400;
 
 .leftbar-container {
   display: flex;
-  // position: fixed;
   flex-direction: column;
   background: #f5f5f5;
-  max-width: #{$max-width}px;
+  position: fixed;
+  // max-width: #{$max-width}px;
+  width: 20vw;
   height: 100%;
   color: #404040;
+
   .profile-wb {
-    max-width: #{$max-width - 50}px;
+    // max-width: #{$max-width - 50}px;
+    width: calc(20vw - 50px);
   }
   .leftbar-container-inside {
     margin-left: 25px;

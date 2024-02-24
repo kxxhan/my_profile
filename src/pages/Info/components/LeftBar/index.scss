@@ -1,8 +1,8 @@
-$max-width: 250;
+$max-width: 400;
 
 .leftbar-container {
   display: flex;
-  position: fixed;
+  // position: fixed;
   flex-direction: column;
   background: #f5f5f5;
   max-width: #{$max-width}px;
@@ -14,5 +14,9 @@ $max-width: 250;
   .leftbar-container-inside {
     margin-left: 25px;
     margin-right: 25px;
+    h2 {
+      margin-top: 70px;
+      margin-bottom: 5px;
+    }
   }
 }
